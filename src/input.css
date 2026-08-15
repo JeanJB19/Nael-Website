@@ -7,7 +7,7 @@
   One rule set, applied everywhere, so every section reads as
   built by the same hand.
 
-  TYPOGRAPHIC SCALE — exactly 4 sizes used on the whole page:
+  TYPOGRAPHIC SCALE —dd exactly 4 sizes used on the whole page:
     .type-main   text-4xl/5xl  → the page's one main heading (Hero H1)
     .type-sub    text-2xl      → every H2/H3/H4 (section + card + article titles)
     .type-body   text-sm       → every paragraph, list item, description

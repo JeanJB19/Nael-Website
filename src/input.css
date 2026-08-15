@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+/*
+  ============================================================
+  DESIGN SYSTEM
+  ============================================================
+  One rule set, applied everywhere, so every section reads as
+  built by the same hand.
+
+  TYPOGRAPHIC SCALE — exactly 4 sizes used on the whole page:
+    .type-main   text-4xl/5xl  → the page's one main heading (Hero H1)
+    .type-sub    text-2xl      → every H2/H3/H4 (section + card + article titles)
+    .type-body   text-sm       → every paragraph, list item, description
+    .type-label  text-xs       → every eyebrow, tag, badge, meta label
+
+  SPACING SCALE:
+    section padding (vertical) → py-20, on every top-level <section>
+    section header → content gap → mb-12
+    card padding → p-6 (outer cards), p-4 (nested callouts inside a card)
+    grid gaps → gap-6
+    internal card rhythm → space-y-4
+
+  BUTTONS — one shape, one size, two colors (currently in use):
+    .btn (shape/behavior) + .btn-sm (size) + .btn-teal/.btn-red (color)
+
+  Note: this file only defines classes actually referenced in
+  index.html. If you reintroduce a large CTA button or a
+  light-background eyebrow label, add its variant back here rather
+  than hand-rolling one-off utility strings in the HTML.
+  ============================================================
+*/
+
+@layer components {
+  /* Typographic scale */
+  .type-main {
+    @apply text-4xl md:text-5xl font-extrabold tracking-tight leading-tight;
+  }
+  .type-sub {
+    @apply text-2xl font-bold tracking-tight leading-snug;
+  }
+  .type-body {
+    @apply text-sm leading-relaxed;
+  }
+  .type-label {
+    @apply text-xs font-mono uppercase tracking-wider;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-lg font-semibold transition whitespace-nowrap;
+  }
+  .btn-sm {
+    @apply px-4 py-2 text-xs;
+  }
+  .btn-teal {
+    @apply bg-teal-500 hover:bg-teal-400 text-slate-950;
+  }
+  .btn-red {
+    @apply bg-red-600 hover:bg-red-500 text-white;
+  }
+
+  /* Reusable section-header eyebrow label (dark-background sections only —
+     the light-background variant was removed as unused; see note above) */
+  .section-eyebrow-dark {
+    @apply text-xs font-mono uppercase tracking-wider text-teal-400 block mb-2;
+  }
+
+  /* Inline "read more" style CTA links (article cards, callouts) — body-tier size */
+  .link-cta {
+    @apply text-sm font-bold text-teal-600 hover:text-teal-700 inline-flex items-center gap-1 transition;
+  }
+}
+
+/*
+  ============================================================
+  MOTION
+  ============================================================
+  1. #hero-network   – canvas background, drawn/animated in JS
+  2. .type-cursor     – blinking caret for the hero typewriter
+  3. .reveal-card      – staggered card entrance, driven by JS
+                        toggling .is-visible via IntersectionObserver
+
+  Everything here degrades gracefully under prefers-reduced-motion.
+  ============================================================
+*/
+
+#hero-network {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.type-cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: type-cursor-blink 0.9s step-start infinite;
+}
+
+@keyframes type-cursor-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.reveal-card {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-card {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .type-cursor {
+    animation: none;
+    opacity: 1;
+  }
+}

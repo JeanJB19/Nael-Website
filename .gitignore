@@ -1,0 +1,2 @@
+# Standalone Tailwind CLI binary (~110MB) — not source, re-download instead of committing
+tools/*.exe

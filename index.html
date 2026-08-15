@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nael Jean-Baptiste | MERL Specialist & Data Analyst</title>
+  <meta name="description" content="Nael Jean-Baptiste provides technical assistance in MERL systems architecture, research engineering, and data analysis — enhanced with AI, automation, and data science.">
+  <meta name="author" content="Nael Jean-Baptiste">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0f172a">
+
+  <!--
+    IMPORTANT — before/at deploy: replace https://your-domain-here.com below
+    with the site's real, final URL. Open Graph/Twitter image and url tags
+    must be absolute — social platforms cannot resolve relative paths, so
+    leaving the placeholder in place will make link previews fail silently.
+  -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nael Jean-Baptiste">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://your-domain-here.com/">
+  <meta property="og:title" content="Nael Jean-Baptiste | MERL Specialist & Data Analyst">
+  <meta property="og:description" content="Technical assistance for results measurement, research engineering, and data analysis — bridging donor-compliant MERL systems with AI, automation, and data science.">
+  <meta property="og:image" content="https://your-domain-here.com/assets/my_pic.jpeg">
+  <meta property="og:image:alt" content="Nael Jean-Baptiste">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nael Jean-Baptiste | MERL Specialist & Data Analyst">
+  <meta name="twitter:description" content="Technical assistance for results measurement, research engineering, and data analysis — bridging donor-compliant MERL systems with AI, automation, and data science.">
+  <meta name="twitter:image" content="https://your-domain-here.com/assets/my_pic.jpeg">
+  <meta name="twitter:image:alt" content="Nael Jean-Baptiste">
+
+  <link rel="stylesheet" href="dist/styles.css">
+  <script src="assets/main.js" defer></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+  <!-- Header / Navigation -->
+  <header class="bg-slate-900 text-white border-b border-slate-800 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="block">
+        <span class="text-xl font-bold tracking-tight text-teal-400 block">NAEL JEAN-BAPTISTE</span>
+        <span class="text-xs text-slate-400">Monitoring, Evaluation, Research & Learning (MERL) | Data Analyst | Client Customized solutions</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+        <a href="#services" class="hover:text-teal-400 transition">Services</a>
+        <a href="#publications" class="hover:text-teal-400 transition">Publications</a>
+        <a href="#media" class="hover:text-teal-400 transition">AI & Media</a>
+        <a href="#contact" class="hover:text-teal-400 transition">Contact</a>
+      </nav>
+
+      <!-- Mobile menu toggle -->
+      <button id="nav-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu" class="md:hidden p-2 text-slate-300 hover:text-teal-400 transition">
+        <svg id="nav-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        <svg id="nav-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+    </div>
+
+    <!-- Mobile nav panel -->
+    <nav id="mobile-menu" class="hidden md:hidden border-t border-slate-800 bg-slate-900">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col space-y-4 text-sm font-medium text-slate-300">
+        <a href="#services" class="hover:text-teal-400 transition">Services</a>
+        <a href="#publications" class="hover:text-teal-400 transition">Publications</a>
+        <a href="#media" class="hover:text-teal-400 transition">AI & Media</a>
+        <a href="#contact" class="hover:text-teal-400 transition">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-slate-900 text-white py-20 border-b border-slate-800 overflow-hidden">
+    <!-- Floating AI network background -->
+    <canvas id="hero-network" aria-hidden="true"></canvas>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-7 space-y-6">
+        <h1 class="type-main" aria-label="Technical Assistance for Results Measurement & Client Needs">
+          <span id="typewriter" aria-hidden="true"></span><span class="type-cursor" aria-hidden="true">|</span>
+        </h1>
+        <p class="type-body text-slate-300">
+          Bridging standard client needs & donor-compliant MERL systems with cutting-edge Data Science, AI, and Automation.
+        </p>
+      </div>
+      <div class="md:col-span-5 flex justify-center">
+        <div class="relative w-72 h-72 md:w-80 md:h-80 rounded-2xl bg-gradient-to-tr from-teal-500 to-slate-700 p-1 shadow-2xl">
+          <img src="assets/my_pic.jpeg" alt="Nael Jean-Baptiste" width="320" height="320" fetchpriority="high" class="w-full h-full object-cover rounded-2xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 1: CORE SERVICES -->
+  <section id="services" class="py-20 max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <h2 class="type-sub text-teal-600 uppercase">What I Offer</h2>
+      <p class="type-body text-slate-600 mt-2">End-to-end data systems, research engineering, and bespoke digital platforms.</p>
+    </div>
+
+    <!-- 4-Column Grid Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Card 1 -->
+      <div class="reveal-card bg-white rounded-2xl border border-slate-200 shadow-sm p-6 hover:shadow-md transition flex flex-col justify-between" data-reveal-index="0">
+        <div>
+          <div class="flex items-center space-x-3 mb-4">
+            <div class="p-3 bg-teal-50 text-teal-600 rounded-xl font-bold text-xl">01</div>
+            <h3 class="type-sub text-slate-900">MERL Systems Architecture</h3>
+          </div>
+          <p class="type-body text-slate-600 mb-6 italic">Building infrastructure from pre-proposal strategy through full project implementation.</p>
+
+          <div class="space-y-4 border-t border-slate-100 pt-4">
+            <div>
+              <span class="type-label text-slate-400 block mb-2">Standard Delivery</span>
+              <ul class="type-body text-slate-700 space-y-2">
+                <li>• <strong>MERL Design & Strategy:</strong> Authoring MERL strategies aligned directly with proposal requirements and donor-client guidelines.</li>
+                <li>• <strong>Frameworks:</strong> Elaborating Theories of Change (TOC), Logic Models, LogFrames, MERL plans, and Indicator Tracking Tables (ITT).</li>
+                <li>• <strong>Data Architecture:</strong> Developing routine data tools, mapping multi-tiered data flows, scoping relational databases, and writing SQL queries.</li>
+                <li>• <strong>Data Visualization:</strong> Designing BI dashboards to track routine metrics and streamline reporting.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-900 text-white p-4 rounded-xl border border-slate-800 mt-6 space-y-3">
+          <span class="type-label text-teal-400 block">The Tech Edge</span>
+          <p class="type-body text-slate-300">
+            <strong>AI-Driven Querying & Automated Reporting:</strong> Integrating AI-assisted data query tools and automated workflows into report-writing processes to accelerate timelines.
+          </p>
+          <p class="type-body text-slate-300">
+            <strong>LLM-Powered BI Dashboard:</strong> Allowing stakeholders to ask conversational questions (Text-to-SQL) and retrieve instant, dynamic insights.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="reveal-card bg-white rounded-2xl border border-slate-200 shadow-sm p-6 hover:shadow-md transition flex flex-col justify-between" data-reveal-index="1">
+        <div>
+          <div class="flex items-center space-x-3 mb-4">
+            <div class="p-3 bg-blue-50 text-blue-600 rounded-xl font-bold text-xl">02</div>
+            <h3 class="type-sub text-slate-900">Study & Research Engineering</h3>
+          </div>
+          <p class="type-body text-slate-600 mb-6 italic">Structuring rigorous field data collection, mixed-method evaluations, and advanced research protocols.</p>
+
+          <div class="space-y-4 border-t border-slate-100 pt-4">
+            <div>
+              <span class="type-label text-slate-400 block mb-2">Standard Delivery</span>
+              <ul class="type-body text-slate-700 space-y-2">
+                <li>• <strong>Secondary Evidence & Gap Analysis:</strong> Critical literature synthesis, online desk reviews, and information gap mapping.</li>
+                <li>• <strong>Protocol Design:</strong> Authoring Scopes of Work (SOWs), study question refinement, sampling determination, Data Analysis Plans, and ethical guardrails.</li>
+                <li>• <strong>Field Tooling & Manuals:</strong> Developing quantitative questionnaires, qualitative guides, enumerator manuals, and synthetic datasets.</li>
+                <li>• <strong>Analytical Scripting:</strong> Pre-scripting data analysis workflows to guarantee smooth survey execution.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-900 text-white p-4 rounded-xl border border-slate-800 mt-6 space-y-3">
+          <span class="type-label text-blue-400 block">The Tech Edge</span>
+          <p class="type-body text-slate-300">
+            <strong>Advanced Mobile Survey Engineering:</strong> Dynamic mobile data tools featuring complex skip logic, cascading selects, and validation constraints.
+          </p>
+          <p class="type-body text-slate-300">
+            <strong>Real-Time Data Quality Assessment (DQA):</strong> Automated DQA scripts detecting logical errors, outliers, missing data, and enumerator bias in real time.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="reveal-card bg-white rounded-2xl border border-slate-200 shadow-sm p-6 hover:shadow-md transition flex flex-col justify-between" data-reveal-index="2">
+        <div>
+          <div class="flex items-center space-x-3 mb-4">
+            <div class="p-3 bg-indigo-50 text-indigo-600 rounded-xl font-bold text-xl">03</div>
+            <h3 class="type-sub text-slate-900">Quant, Qual & Geospatial Analysis</h3>
+          </div>
+          <p class="type-body text-slate-600 mb-6 italic">Transforming multi-source data into static & dynamic visual, statistical evidence, and qualitative synthesis.</p>
+
+          <div class="space-y-4 border-t border-slate-100 pt-4">
+            <div>
+              <span class="type-label text-slate-400 block mb-2">Standard Delivery</span>
+              <ul class="type-body text-slate-700 space-y-2">
+                <li>• <strong>Quant Analysis & ML:</strong> Data processing, cleaning, advanced statistical analysis, predictive modeling, and supervised/unsupervised ML.</li>
+                <li>• <strong>Qual & NLP Processing:</strong> Digitizing field notes, using Natural Language Processing (NLP) & computerized assistance for transcript insight extraction.</li>
+                <li>• <strong>Geospatial Analytics:</strong> Achievement mapping and spatial data analysis.</li>
+                <li>• <strong>Reporting & Data Storytelling:</strong> Transforming findings into visual reports and executive briefings designed for evidence-based decision-making.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-900 text-white p-4 rounded-xl border border-slate-800 mt-6 space-y-3">
+          <span class="type-label text-indigo-400 block">The Tech Edge</span>
+          <p class="type-body text-slate-300">
+            <strong>Automated Data Pipelines:</strong> Streaming mobile survey data directly into R and Python workflows via custom APIs to drive real-time Power BI dashboards.
+          </p>
+          <p class="type-body text-slate-300">
+            <strong>AI Literature Synthesis:</strong> Grounded AI research tools transforming high-volume document repositories into evidence-based insights.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 4: CUSTOM DIGITAL SOLUTIONS -->
+      <div class="reveal-card bg-white rounded-2xl border border-slate-200 shadow-sm p-6 hover:shadow-md transition flex flex-col justify-between" data-reveal-index="3">
+        <div>
+          <div class="flex items-center space-x-3 mb-4">
+            <div class="p-3 bg-emerald-50 text-emerald-600 rounded-xl font-bold text-xl">04</div>
+            <h3 class="type-sub text-slate-900">Client Customized Solutions</h3>
+          </div>
+          <p class="type-body text-slate-600 mb-6 italic">Tailored digital tools, automated workflows, and systems engineering for specialized operational needs.</p>
+
+          <div class="space-y-4 border-t border-slate-100 pt-4">
+            <div>
+              <span class="type-label text-slate-400 block mb-2">Standard Delivery</span>
+              <ul class="type-body text-slate-700 space-y-2">
+                <li>• <strong>Lightweight Business Apps:</strong> Custom internal web apps, interactive forms, and utility tools built for specific operational tasks without unnecessary software bloat.</li>
+                <li>• <strong>End-to-End Task Automation:</strong> Automating data workflows using custom scripts, webhooks, and modern automation tools.</li>
+                <li>• <strong>System & Data Pipeline Integration:</strong> Seamlessly connecting disparate platforms, cloud databases, and field tools to eliminate manual data transfers.</li>
+                <li>• <strong>Workflow Audit & Digital Modernization:</strong> Evaluating legacy processes to identify operational bottlenecks and replace fragmented workflows with lean digital tools.</li>
+                <li>• <strong>Maintenance & Technical Onboarding:</strong> Providing hands-on documentation, code walkthroughs, and post-deployment support to ensure long-term adoption and smooth handoffs.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-900 text-white p-4 rounded-xl border border-slate-800 mt-6 space-y-3">
+          <span class="type-label text-emerald-400 block">The Tech Edge</span>
+          <p class="type-body text-slate-300">
+            <strong>Custom Scripting & Middleware:</strong> Developing specialized Python, R, and API scripts to extend the capability of off-the-shelf software and solve unique client bottlenecks.
+          </p>
+          <p class="type-body text-slate-300">
+            <strong>No-Code/Low-Code Automation:</strong> Building n8n and webhook-driven workflows that connect field tools, cloud storage, and reporting platforms without heavy engineering overhead.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 2: PUBLICATIONS & INSIGHTS HUB -->
+  <section id="publications" class="bg-slate-100 py-20 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="type-sub text-teal-600 uppercase">Insights</h2>
+        <p class="type-body text-slate-600 mt-2">Explore published articles and case studies demonstrating practical applications of Machine Learning, NLP, and AI in MERL and data analysis.</p>
+      </div>
+
+      <!-- Articles Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Article 1 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-6 flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex flex-wrap gap-1 mb-3">
+              <span class="type-label normal-case text-slate-600 bg-slate-100 px-2 py-0.5 rounded">#MachineLearning</span>
+              <span class="type-label normal-case text-slate-600 bg-slate-100 px-2 py-0.5 rounded">#QualitativeSampling</span>
+            </div>
+            <h3 class="type-sub text-slate-900 mb-2">Cluster Machine Learning Techniques to Enable Thematic Grouping</h3>
+            <p class="type-body text-slate-600 mb-4 line-clamp-3">Using unsupervised machine learning algorithms to streamline qualitative evaluation transcripts into thematic clusters.</p>
+          </div>
+          <a href="https://www.linkedin.com/pulse/cluster-machine-learning-techniques-enable-thematic-jean-baptiste-3kvae/" target="_blank" rel="noopener noreferrer" class="link-cta">
+            Read on LinkedIn ↗
+          </a>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-6 flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex flex-wrap gap-1 mb-3">
+              <span class="type-label normal-case text-slate-600 bg-slate-100 px-2 py-0.5 rounded">#NLP</span>
+              <span class="type-label normal-case text-slate-600 bg-slate-100 px-2 py-0.5 rounded">#FocusGroupDiscussions</span>
+            </div>
+            <h3 class="type-sub text-slate-900 mb-2">Harnessing NLP to Decode Community Perspectives</h3>
+            <p class="type-body text-slate-600 mb-4 line-clamp-3">Published on the USAID Food Security Nutrition Network blog, exploring natural language processing for beneficiary feedback.</p>
+          </div>
+          <a href="https://medium.com/fsn-network-blog/harnessing-natural-language-processing-to-decode-community-perspectives-a98e7f70a1ce" target="_blank" rel="noopener noreferrer" class="link-cta">
+            Read on FSN Network Medium ↗
+          </a>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-6 flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex flex-wrap gap-1 mb-3">
+              <span class="type-label normal-case text-slate-600 bg-slate-100 px-2 py-0.5 rounded">#MobileData</span>
+              <span class="type-label normal-case text-slate-600 bg-slate-100 px-2 py-0.5 rounded">#PowerBI</span>
+            </div>
+            <h3 class="type-sub text-slate-900 mb-2">Seven Reasons for Combining Mobile Data & Business Intelligence</h3>
+            <p class="type-body text-slate-600 mb-4 line-clamp-3">A practical breakdown of why combining KoboToolbox with Power BI solves crucial data quality issues in MERL.</p>
+          </div>
+          <a href="https://www.linkedin.com/pulse/seven-reasons-combining-mobile-data-collection-me-nael-jean-baptiste/" target="_blank" rel="noopener noreferrer" class="link-cta">
+            Read on LinkedIn ↗
+          </a>
+        </div>
+
+        <!-- Article 4 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-6 flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex flex-wrap gap-1 mb-3">
+              <span class="type-label normal-case text-slate-600 bg-slate-100 px-2 py-0.5 rounded">#Python</span>
+              <span class="type-label normal-case text-slate-600 bg-slate-100 px-2 py-0.5 rounded">#DataScience</span>
+            </div>
+            <h3 class="type-sub text-slate-900 mb-2">Is Programming Language a "Plus" for Data Analysis?</h3>
+            <p class="type-body text-slate-600 mb-4 line-clamp-3">Five concrete reasons demonstrating the advantage of adopting Python over spreadsheets in monitoring & evaluation.</p>
+          </div>
+          <a href="https://www.linkedin.com/pulse/programming-language-plus-data-analysis-five-concrete-jean-baptiste/" target="_blank" rel="noopener noreferrer" class="link-cta">
+            Read on LinkedIn ↗
+          </a>
+        </div>
+
+        <!-- Article 5 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-6 flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex flex-wrap gap-1 mb-3">
+              <span class="type-label normal-case text-slate-600 bg-slate-100 px-2 py-0.5 rounded">#n8n</span>
+              <span class="type-label normal-case text-slate-600 bg-slate-100 px-2 py-0.5 rounded">#LLM Automation</span>
+            </div>
+            <h3 class="type-sub text-slate-900 mb-2">How Automation and AI Are Redefining MERL</h3>
+            <p class="type-body text-slate-600 mb-4 line-clamp-3">From monthly hustle to effortless report generation through automated workflows.</p>
+          </div>
+          <a href="https://medium.com/@nael150571/how-automation-and-ai-are-redefining-merl-practices-from-monthly-hustle-to-effortless-report-731d909bb90e" target="_blank" rel="noopener noreferrer" class="link-cta">
+            Read on Medium ↗
+          </a>
+        </div>
+
+        <!-- Article 6 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-6 flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex flex-wrap gap-1 mb-3">
+              <span class="type-label normal-case text-slate-600 bg-slate-100 px-2 py-0.5 rounded">#LLMPrompting</span>
+              <span class="type-label normal-case text-slate-600 bg-slate-100 px-2 py-0.5 rounded">#WebQuerying</span>
+            </div>
+            <h3 class="type-sub text-slate-900 mb-2">AI-Driven Research Infographic</h3>
+            <p class="type-body text-slate-600 mb-4 line-clamp-3">A 10-step workflow for systematically identifying evidence gaps using modern AI tools.</p>
+          </div>
+          <a href="https://drive.google.com/file/d/1I92mYijCLaoe3X32v3EyVyp0zN9BcHyP/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="link-cta">
+            View on Google Drive ↗
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Medium Workspace Callout -->
+      <div class="mt-10 text-center pt-6 border-t border-slate-200">
+        <p class="type-body text-slate-600">
+          For additional articles and publications, please visit my
+          <a href="https://medium.com/@nael150571" target="_blank" rel="noopener noreferrer" class="link-cta ml-1">
+            Medium Workspace ↗
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: MEDIA SPOTLIGHT -->
+  <section id="media" class="py-20 max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <h2 class="type-sub text-teal-600 uppercase">Media Spotlight</h2>
+      <p class="type-body text-slate-600 mt-2">Educational content and illustrative customized AI tool.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- YouTube Channel Card -->
+      <div class="bg-slate-900 text-white p-6 rounded-xl flex items-center justify-between shadow-sm">
+        <div>
+          <span class="section-eyebrow-dark mb-1">Educational Media</span>
+          <h3 class="type-sub">"Analyze It" YouTube Channel</h3>
+          <p class="type-body text-slate-400 mt-1">40+ video tutorials on KoboToolbox, Power BI, Python, R and AI for MERL.</p>
+        </div>
+        <a href="https://www.youtube.com/c/AnalyzeIt_Nael" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-red ml-4">
+          Watch Channel ↗
+        </a>
+      </div>
+
+      <!-- Custom AI Tool Card -->
+      <div class="bg-slate-900 text-white p-6 rounded-xl flex items-center justify-between shadow-sm">
+        <div>
+          <span class="section-eyebrow-dark mb-1">Custom AI Agent</span>
+          <h3 class="type-sub">M&E-Sage</h3>
+          <p class="type-body text-slate-400 mt-1">AI agent engineered to query a donor M&E policy guidance.</p>
+        </div>
+        <a href="https://chatgpt.com/g/g-6775cad6e014819186df3a68ed7a5900-m-e-sage" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-teal ml-4">
+          Try Tool ↗
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 4: CONTACT INFORMATION -->
+  <section id="contact" class="py-20 bg-slate-900 text-white border-t border-slate-800">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="type-sub text-teal-400 uppercase">Get In Touch</h2>
+      <p class="type-body text-slate-400 mt-2 mb-12">Reach out directly for technical assistance, advisory engagements, or research collaborations.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto text-left">
+        <!-- Email Box -->
+        <a href="mailto:nael150571@gmail.com" class="bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-teal-400 transition group flex items-center space-x-4">
+          <div class="p-3 bg-teal-500/10 text-teal-400 rounded-xl group-hover:bg-teal-500 group-hover:text-slate-950 transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          </div>
+          <div>
+            <span class="type-label text-slate-400 block">Email Address</span>
+            <span class="type-body font-semibold text-white group-hover:text-teal-400 transition">nael150571@gmail.com</span>
+          </div>
+        </a>
+
+        <!-- Phone Box -->
+        <a href="tel:+15615427803" class="bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-teal-400 transition group flex items-center space-x-4">
+          <div class="p-3 bg-teal-500/10 text-teal-400 rounded-xl group-hover:bg-teal-500 group-hover:text-slate-950 transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+          </div>
+          <div>
+            <span class="type-label text-slate-400 block">Phone Number</span>
+            <span class="type-body font-semibold text-white group-hover:text-teal-400 transition">+1 (561) 542-7803</span>
+          </div>
+        </a>
+
+        <!-- Languages Box -->
+        <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 flex items-center space-x-4">
+          <div class="p-3 bg-teal-500/10 text-teal-400 rounded-xl">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 100-18 9 9 0 000 18z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.6 9h16.8M3.6 15h16.8M12 3c2.5 2.5 4 5.5 4 9s-1.5 6.5-4 9c-2.5-2.5-4-5.5-4-9s1.5-6.5 4-9z"></path></svg>
+          </div>
+          <div>
+            <span class="type-label text-slate-400 block">Languages</span>
+            <span class="type-body font-semibold text-white">English · Français · Español</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-500 type-label normal-case text-center py-6 border-t border-slate-800">
+    <p>&copy; <span id="year">2026</span> Nael Jean-Baptiste. All rights reserved.</p>
+  </footer>
+</body>
+</html>
